@@ -1,5 +1,6 @@
 ARG PY_VERSION
-FROM python:${PY_VERSION}-slim-buster
+# add the platform config if building the image on M2 mac, see https://pythonspeed.com/articles/docker-build-problems-mac/
+FROM --platform=linux/amd64 python:${PY_VERSION}-slim-buster
 
 # Build args
 ARG AWS_ACCESS_KEY_ID
