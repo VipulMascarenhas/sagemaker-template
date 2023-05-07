@@ -4,7 +4,9 @@ This repo is an end-to-end template for training and deploying a container & cre
 Amazon SageMaker. 
 
 
-The template is directly used from [shapemaker](https://github.com/smaakage85/shapemaker) with some customizations.
+This repository is a copy of [shapemaker](https://github.com/smaakage85/shapemaker), which is licensed under the MIT license.
+
+The template has some modifications that allows the setup to work on M2 laptops. The following functionality is supported:
 
 - a minimalistic template for model code
 - a template for a docker image for model training
@@ -54,7 +56,6 @@ The setup was done on a Mac (M2), it might need to be tweaked slightly to accomm
     including passing training and test data to the ML algorithms, temporary data and output 
     from the ML algorithms (e.g. model files). Be sure to create the S3 bucket in the same region 
     that you intend to create the Sagemaker instance.
-  - 
 
 
 **Software**
@@ -77,7 +78,7 @@ The setup was done on a Mac (M2), it might need to be tweaked slightly to accomm
     brew install pyenv-virtualenv
     
     pyenv install -v 3.11.3
-    pyenv virtualenv 3.11.3 v3.11.
+    pyenv virtualenv 3.11.3 v3.11.3
     
     pyenv activate v3.11.3
     ```
